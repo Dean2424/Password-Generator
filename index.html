@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Strong Password Generator</title>
+</head>
+<body>
+    <div class="password-generator-container">
+        <h1>Strong Password Generator</h1>
+        <form id="password-form">
+            <input type="text" id="random-password-input" class="password-input">
+            <input class="generate-password-btn" id="generate-password-btn" type="submit" value="Generate Password" class="">
+            <div class="no-spaces-container">
+        <label>
+            <input type="checkbox" id="no-spaces" class="no-spaces"> Remove Spaces
+        </label>
+        </div>
+        <button type="button" id="copy-btn" class="copy-btn">Copy Password</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
