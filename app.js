@@ -18,10 +18,12 @@ const passwordForm = document.getElementById("password-form");
 const passwordInput = document.getElementById("random-password-input");
 const noSpaces = document.getElementById("no-spaces");
 const copyBtn = document.getElementById("copy-btn");
+const clearBtn = document.getElementById("clear-btn");
 
 //Event Listeners
 passwordForm.addEventListener("submit", generatePassword);
 copyBtn.addEventListener("click", copyPassword);
+clearBtn.addEventListener("click", clearAll);
 
 //Functions
 function generatePassword (e) {
@@ -41,7 +43,7 @@ function generatePassword (e) {
     passwordInput.value = randomPassword.join(" ");
 
     // Join with or without spaces
-  //passwordInput.value = randomPassword.join(noSpaces.checked ? "" : " ");
+  //passwordInput.value = randomPassword.join(noSpaces.checked ? "" : " "); - New Way
 
   let seperator;
 
@@ -64,4 +66,9 @@ function copyPassword () {
     document.execCommand("copy");
     alert("Password copied to clipboard!");
 
+}
+
+function clearAll () {
+  passwordInput.value = "";
+  noSpaces.checked = false;
 }

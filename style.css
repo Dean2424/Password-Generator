@@ -11,7 +11,7 @@ body {
 
 .password-generator-container {
     width: 37.5rem;
-    height: 22rem;
+    height: 27rem;
     background-color: #0a0e30;
     border-radius: 0.5rem;
     margin: 10rem auto;
@@ -69,7 +69,7 @@ h1 {
     color: white;  
     border: none;
     border-radius: 0.5rem;
-    margin: 2.6rem 13.8rem;
+    margin: 3rem 13.8rem;
     font-size: 1rem;
     font-weight: 500;
     transition: all .2s ease-in;
@@ -77,5 +77,23 @@ h1 {
 }
 
 .copy-btn:hover {
+    opacity: .8;
+}
+
+.clear-btn {
+    width: 10rem;
+    height: 2rem;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin: -2rem 14rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
     opacity: .8;
 }
